@@ -9,8 +9,8 @@
 package main
 
 import (
-	"flag"
 	"encoding/json"
+	"flag"
 	"log"
 	"net/http"
 	"os"
@@ -19,7 +19,7 @@ import (
 )
 
 const (
-	 DEFAULT_CONFIG_FILE string = "./config.json" 
+	DEFAULT_CONFIG_FILE string = "./config.json"
 )
 
 var (

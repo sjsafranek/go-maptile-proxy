@@ -12,7 +12,8 @@
       "Subdomains": null,
       "Ext": "png",
       "Type": "image/png",
-      "MaxZoom": 19
+      "MaxZoom": 19,
+      "Attribution": "&copy; OpenStreetMap contributors"
     }
   }
 }

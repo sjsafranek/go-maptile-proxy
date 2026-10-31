@@ -1,9 +1,12 @@
 package main
 
 type Provider struct {
-	URL        string   // placeholders: {z} {x} {y} {s}
-	Subdomains []string // optional, for {s}
-	Ext        string
-	Type       string
-	MaxZoom    int
+	URL         string   // placeholders: {z} {x} {y} {s}
+	Subdomains  []string // optional, for {s}
+	Ext         string
+	Type        string
+	MaxZoom     int
+	TileSize    int
+	ZoomOffset  int
+	Attribution string
 }
