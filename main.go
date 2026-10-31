@@ -36,7 +36,7 @@ func getEnvironmentVariable(key, def string) string {
 func loadConfig(config_file string) (Config, error) {
 	var config Config
 
-	file, err := os.Open("config.json")
+	file, err := os.Open(config_file)
 	if err != nil {
 		return config, err
 	}
