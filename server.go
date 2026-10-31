@@ -25,7 +25,7 @@ func fail(resp http.ResponseWriter, code int, msg string) {
 	http.Error(resp, msg, code)
 }
 
-var tileRe = regexp.MustCompile(`^/api/v1/([\w-]+)/(\d{1,2})/(\d{1,7})/(\d{1,7})\.(\w+)$`)
+var tileRe = regexp.MustCompile(`^/api/v1/provider/([\w-]+)/(\d{1,2})/(\d{1,7})/(\d{1,7})\.(\w+)$`)
 
 type upstreamError struct {
 	status int
@@ -179,7 +179,7 @@ func (self *Server) handleTile(resp http.ResponseWriter, req *http.Request) {
 
 	m := tileRe.FindStringSubmatch(req.URL.Path)
 	if m == nil {
-		fail(resp, http.StatusNotFound, "use /api/v1/{provider}/{z}/{x}/{y}.{ext}")
+		fail(resp, http.StatusNotFound, "use /api/v1/provider/{provider}/{z}/{x}/{y}.{ext}")
 		return
 	}
 	name, ext := m[1], m[5]
