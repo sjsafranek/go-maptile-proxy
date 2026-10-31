@@ -1,0 +1,18 @@
+{
+  "Addr": ":8080",
+  "CacheDir": "./tile-cache",
+  "UserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+  "TTL": 604800000000000,
+  "Stale": 2592000000000000,
+  "UpstreamTimeout": 10000000000,
+  "MaxTileBytes": 10485760,
+  "Providers": {
+    "osm": {
+      "URL": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+      "Subdomains": null,
+      "Ext": "png",
+      "Type": "image/png",
+      "MaxZoom": 19
+    }
+  }
+}
